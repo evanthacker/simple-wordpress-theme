@@ -9,8 +9,19 @@
 <body>
     <header>
         <h1><?php bloginfo('name'); ?></h1>
-        <small><?php bloginfo('description'); ?></small>
+        <span><?php bloginfo('description'); ?></span>
     </header>
+
+    <div class="main">
+
+    <?php if(have_posts()) : ?>
+        post found.
+    <?php else : ?>
+        <?php echo wpautop('Sorry, No posts were found.'); ?>
+
+    <?php endif; ?>
+
+    </div>
 </body>
 
 </html>
