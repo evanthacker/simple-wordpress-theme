@@ -5,7 +5,11 @@
     <?php if(have_posts()) : ?>
         <?php while(have_posts()): the_post(); ?>
             <article class="post">
-                
+                <?php if(has_post_thumbnail()) : ?>
+                    <div class="post-thumbnail">
+                        <?php the_post_thumbnail(); ?>
+                    </div>
+        <?php endif; ?>
                 <h3>
                     <?php the_title(); ?>
                 </h3>
