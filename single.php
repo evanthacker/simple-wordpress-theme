@@ -24,7 +24,12 @@
         <?php echo wpautop('Sorry, No posts were found.'); ?>
 
     <?php endif; ?>
+
+    
+    <?php comments_template(); ?>
     </div>
+
+    
 
     
 
