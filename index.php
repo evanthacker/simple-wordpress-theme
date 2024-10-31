@@ -33,14 +33,5 @@
     
     </div>
 
-    <div class="sidebar">
-
-    TEST
-    
-    </div>
-
-    <div class="clr"></div>
-
-</div>
 
 <?php get_footer(); ?>
