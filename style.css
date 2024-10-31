@@ -74,3 +74,8 @@ article.post a.button{
     color: #fff;
     padding: 5px;
 }
+
+.post-thumbnail img{
+    width: 100%;
+    height: auto;
+}
